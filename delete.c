@@ -128,6 +128,7 @@ void delete_fixup(tree_t **root, tree_t *x, tree_t *x_parent)
 	}
 }
 
+
 int delete(tree_t **root, data_t item)
 {
 	// Step 1: Find the node to delete
