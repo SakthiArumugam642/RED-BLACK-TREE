@@ -17,7 +17,7 @@ void transplant(tree_t **root, tree_t *u, tree_t *v)
 	}
 }
 
-// Fix Red-Black Tree properties after deletion
+// Fixing Red-Black Tree properties after deletion
 void delete_fixup(tree_t **root, tree_t *x, tree_t *x_parent)
 {
 	tree_t *sibling;
@@ -193,7 +193,7 @@ int delete(tree_t **root, data_t item)
 	// Free the deleted node
 	free(z);
 	
-	// Fix Red-Black Tree properties if a black node was deleted
+	// Fixing Red-Black Tree properties if a black node was deleted
 	if(y_original_color == 0){
 		delete_fixup(root, x, x_parent);
 	}
