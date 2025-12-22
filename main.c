@@ -1,12 +1,7 @@
-/**************************************************************************************************************************************************************
-*Title			: main function(Driver function)
-*Description	: This function is used as the driver function for the all the functions
-***************************************************************************************************************************************************************/
 #include "rbt.h"
 
 int main()
 {
-	/* Declare the pointers */
 	data_t operation;
 	char option;
 	tree_t *root = NULL;
@@ -16,13 +11,11 @@ int main()
 
 	do
 	{
-		/* Display the menu */
+
 		printf("1. Insert\n2. Delete\n3. Find Minimum\n4. Delete Minimum\n5. Find Maximum\n6. Delete Maximum\n");
 		printf("Enter your choice: ");
 		scanf("%d", &operation);
-		/* Read the option for performing the operation */
 
-		/* Jump to the option entered by the user */
 		switch (operation)
 		{
 			case 1:
@@ -36,7 +29,7 @@ int main()
 				{
 					printf("ERROR : Insertion failed for data, may be duplicate data %d.\n", data);
 				}
-				/* Modify the above line to handle the error */
+
 				print_tree(root);
 				printf("\n");
 				break;
@@ -55,13 +48,10 @@ int main()
 				{
 					printf("Data %d not found in the tree.\n", data);
 				}
-				/* Modify the above line to handle the error */
 				print_tree(root);
 				printf("\n");
 				break;
 			case 3:
-				// find_minimum(&root);
-				/* Modify the above line to handle the error */
 				if(root == NULL){
 					printf("Tree is empty.\n");
 					break;
@@ -83,13 +73,10 @@ int main()
 				{
 					printf("ERROR : Deletion of minimum data failed.\n");
 				}
-				/* Modify the above line to handle the error */
 				print_tree(root);
 				printf("\n");
 				break;
 			case 5:
-				
-				/* Modify the above line to handle the error */
 				if(root == NULL){
 					printf("Tree is empty.\n");
 					break;
@@ -111,7 +98,6 @@ int main()
 				{
 					printf("ERROR : Deletion of maximum data failed.\n");
 				}
-				/* Modify the above line to handle the error */
 				print_tree(root);
 				printf("\n");
 				break;				

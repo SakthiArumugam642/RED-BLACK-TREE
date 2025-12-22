@@ -1,6 +1,3 @@
-/***************************************************************************************************************************************************************
-*Title		: This the header file for the Red Black Tree
-****************************************************************************************************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,8 +17,6 @@ typedef struct node
 	struct node *right;
 	int color;
 }tree_t;
-
-/* keep all the prototypes of the functions here */
 
 int insert(tree_t **root, data_t item);
 int delete(tree_t **root, data_t item);

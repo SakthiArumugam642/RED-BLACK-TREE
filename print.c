@@ -2,7 +2,6 @@
 
 void print_tree(tree_t *root)
 {
-    /* Definition goes here */
      if(root == NULL) return;
     
     print_tree(root->left);

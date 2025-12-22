@@ -1,7 +1,7 @@
 #include "rbt.h"
 
 
-// Transplant - replaces subtree rooted at u with subtree rooted at v
+// Transplant - replacing subtree rooted at u with subtree rooted at v
 void transplant(tree_t **root, tree_t *u, tree_t *v)
 {
 	if(u->parent == NULL){
